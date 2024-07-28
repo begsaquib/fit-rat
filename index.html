@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT HO JAO</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS RESET */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+         height: 1200px;
+        width: 1450px; 
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 15px; 
+        top: 20px;   
+    }
+    .left img{
+        width: 82px;
+        filter: invert(100%);
+    }
+     .left div{
+        text-align: center;
+     }
+    .mid {
+        display:block;
+        border: 2px solid red;
+        margin: 43px auto;
+        width: 41%;
+    }
+.nb{
+    display: inline-block;
+}
+.nb li{
+    display: inline-block;
+        font-size: 22px;
+
+     }
+     .nb li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+     .nb li a:hover, .nb li a:active{
+         text-decoration: underline;
+        color:  rgb(36, 241, 241);
+    }
+    
+    .right {
+         top: 20px;
+        border: 2px solid red;
+        position: absolute;
+         right: 20px;
+    }
+    .btn{
+        margin: 0px 15px;
+        background-color: black;
+         color: antiquewhite;
+         padding: 4px 14px;
+         border: 2px solid grey;
+         border-radius: 10px;
+         font-size: 20px;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left is for logo -->
+        <div class="left">
+            
+          <img src="img/gym.jpg" alt="">
+          <div>mirza fitness</div>
+        </div>
+        <!-- mid is for navigation -->
+        <div class="mid">
+           <ul class="nb">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">fitness calci</a></li>
+            <li><a href="#">contact info</a></li>
+           </ul>
+        </div>
+        <!-- right is for buttons -->
+        <div class="right">
+            <button class="btn">call us</button>
+            <button class="btn">email</button>
+        </div>
+    </header>
+
+</body>
+
+</html>
