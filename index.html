@@ -6,89 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIT HO JAO</title>
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
     /* CSS RESET */
     body {
+        font-family: "Baloo 2", sans-serif;
         margin: 0px;
         padding: 0px;
-        background: url('img/bg.jpg');
-         height: 1200px;
-        width: 1450px; 
+        background: url('img/bg.png');
+        height: 720px;
+        width: 1920px;
     }
 
     .left {
         display: inline-block;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: absolute;
-        left: 15px; 
-        top: 20px;   
+        left: 15px;
+        top: 20px;
     }
-    .left img{
+
+    .left img {
+        margin: 2px 55px;
         width: 82px;
         filter: invert(100%);
     }
-     .left div{
+
+    .left div {
+        line-height: 27px;
+        font-size: 26px;
+        color: #ffee00;
         text-align: center;
-     }
+    }
+
     .mid {
-        display:block;
-        border: 2px solid red;
-        margin: 43px auto;
+        display: block;
+        /* border: 2px solid red; */
+        margin: 43px 357px;
+        ;
         width: 41%;
     }
-.nb{
-    display: inline-block;
-}
-.nb li{
-    display: inline-block;
+
+    .nb {
+        display: inline-block;
+    }
+
+    .nb li {
+        display: inline-block;
         font-size: 22px;
 
-     }
-     .nb li a{
+    }
+
+    .nb li a {
         color: white;
         text-decoration: none;
         padding: 34px 24px;
     }
-     .nb li a:hover, .nb li a:active{
-         text-decoration: underline;
-        color:  rgb(36, 241, 241);
+
+    .nb li a:hover,
+    .nb li a:active {
+        text-decoration: underline;
+        color: rgb(36, 241, 241);
     }
-    
+
     .right {
-         top: 20px;
-        border: 2px solid red;
+        top: 59px;
+        /* border: 2px solid red; */
         position: absolute;
-         right: 20px;
+        right: 47px;
     }
-    .btn{
-        margin: 0px 15px;
+
+    .btn {
+        font-family: "Baloo 2", sans-serif;
+        margin: 2px 0px;
         background-color: black;
-         color: antiquewhite;
-         padding: 4px 14px;
-         border: 2px solid grey;
-         border-radius: 10px;
-         font-size: 20px;
+        color: antiquewhite;
+        padding: 1px 27px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
     }
-    
+
+    .btn:hover {
+        background-color: rgb(77, 75, 75);
+    }
+
+    .container {
+        border: 2px solid green;
+        margin: 150px 134px;
+        padding: 18px;
+        width: 33%;
+        border-radius: 5px;
+        background-color: #133c0f
+
+    }
+    .container h1{
+        text-align: center;
+        color: green;
+    }
+    .fg input{
+        text-align: center;
+    border-radius: 21px;
+    width: 33%;
+    margin: 14px auto;
+    padding: 8px 74px;
+    display: block;
+    border: 2px solid black;
+    font-size: 19px;
+    font-family: "Baloo 2", sans-serif;
+    }
+    .container button{
+        display: block;
+    width: 50%;
+    margin: 32px auto;
+    border-radius: 6px;
+    }
 </style>
 
 <body>
     <header class="header">
         <!-- left is for logo -->
         <div class="left">
-            
-          <img src="img/gym.jpg" alt="">
-          <div>mirza fitness</div>
+
+            <img src="img/gym.jpg" alt="">
+            <div>mirza fitness</div>
         </div>
         <!-- mid is for navigation -->
         <div class="mid">
-           <ul class="nb">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">fitness calci</a></li>
-            <li><a href="#">contact info</a></li>
-           </ul>
+            <ul class="nb">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">fitness calci</a></li>
+                <li><a href="#">contact info</a></li>
+            </ul>
         </div>
         <!-- right is for buttons -->
         <div class="right">
@@ -96,6 +148,25 @@
             <button class="btn">email</button>
         </div>
     </header>
+    <div class="container">
+        <h1>Register/login here</h1>
+         <form action="backend.py">
+            <div class="fg">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="fg">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="fg">
+                <input type="text" name="" placeholder="enter your sex">
+            </div>
+            <div class="fg">
+                <input type="text" name="" placeholder="enter your contact">
+            </div>
+            <button class="btn">submit</button>
+         </form>
+
+    </div>
 
 </body>
 
